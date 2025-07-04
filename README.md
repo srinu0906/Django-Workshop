@@ -1,1 +1,1 @@
-"# Django-Workshop" 
+# Django-Workshop
