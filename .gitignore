@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+*.pot
+*.mo
+*.sqlite3
+*.db
+*.db-journal
+*.sublime-workspace
+*.sublime-project
+*.vscode/
+.DS_Store
+Thumbs.db
+.env
+.venv
+venv/
+ENV/
+env/
+
+# Django
+*.log
+staticfiles/
+media/
+local_settings.py
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# SQLite
+*.sqlite3
+*.db
+*.db-journal
+
+# Others
+*.swo
+*.swp
+.idea/
+*.iml 

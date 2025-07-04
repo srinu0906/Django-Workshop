@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .background-animation{
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            
+        }
+        section{
+            display: block;
+            position: relative;
+            height: 50px;
+            width: 50px;
+            margin: 20px;
+            background-color: blue;
+            margin-bottom: 10px;
+            transition: 5s ease;
+            animation-name: myanim;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-fill-mode: backwards;
+            animation-iteration-count: infinite;
+            animation-direction:normal;
+            z-index: -1;
+            pointer-events: none;
+        }
+        @keyframes myanim {
+            0%{
+                transform: scale(1.0) translateY(-80px);
+            }
+            100%{
+                transform: scale(3) translateY(500px) rotate(360deg);;
+                
+            }
+        }
+        section:nth-child(1){
+            background-color: red;
+            translate: 100px;
+            animation-delay: 2s;
+        }
+        section:nth-child(2){
+            background-color: rgb(0, 238, 255);
+            translate: 20px;
+            animation-delay: 0s;
+        }
+        section:nth-child(3){
+            background-color: rgb(51, 0, 255);
+            translate: 30px;
+            animation-delay: 4s;
+        }
+        section:nth-child(4){
+            background-color: rgb(123, 255, 0);
+            translate: 40px;
+            animation-delay: 1s;
+        }
+        section:nth-child(5){
+            background-color: rgb(0, 238, 255);
+            translate: 50px;
+            animation-delay: 0s;
+        }
+        section:nth-child(6){
+            background-color: rgb(255, 200, 0);
+            translate: 60px;
+            animation-delay: 2s;
+        }
+        section:nth-child(7){
+            background-color: rgb(153, 255, 0);
+            translate: 70px;
+            animation-delay: 4s;
+        }
+        section:nth-child(8){
+            background-color: rgb(0, 0, 0);
+            translate: 80px;
+            animation-delay: 5s;
+        }
+        section:nth-child(9){
+            background-color: red;
+            translate: 90px;
+            animation-delay: 2s;
+        }
+        section:nth-child(10){
+            background-color: rgb(0, 238, 255);
+            translate: 100px;
+            animation-delay: 0s;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-animation">
+        <section>1</section>
+        <section>2</section>
+        <section>3</section>
+        <section>4</section>
+        <section>5</section>
+        <section>6</section>
+        <section>7</section>
+        <section>8</section>
+        <section>9</section>
+        <section>10</section>
+    </div> 
+</body>
+</html>
